@@ -1,39 +1,31 @@
-# Happy Horse AI Video Generator
+# Happy Horse AI - The Official Repository
 
-Welcome to the community overview of the **Happy Horse AI Video Generator**! 
+> **The world's first open-source SOTA AI video model with native joint audio-video generation.**
 
-This repository serves as a centralized, professional guide to understanding the capabilities, architecture, and features of the Happy Horse 1.0 model. As an emerging state-of-the-art AI video generator, Happy Horse brings exciting advancements to the world of generative media.
+Welcome to the **Official Happy Horse AI** repository. Happy Horse 1.0 is a 15-billion-parameter unified self-attention Transformer that produces stunning 1080p cinematic video **and** synchronized audio in a single forward pass.
 
-## What is Happy Horse AI?
+## 🌟 Why Happy Horse?
+Unlike other models that generate silent video and require downstream lip-syncing or audio generation modules, **Happy Horse 1.0 natively generates joint audio and video**.
+This means:
+- Perfect phoneme-level lip sync natively.
+- Environmental sounds, Foley, and dialogue generated directly from your prompt.
+- Multilingual lip-sync support for 7 languages.
 
-Happy Horse 1.0 is an innovative AI video generation model capable of natively producing **joint audio-video** sequences. This means it can generate high-quality video frames along with synchronized audio (including dialogue, ambient sound, and Foley effects) in a single pass, completely eliminating the need for downstream lip-syncing or separate audio generation modules.
+## 🚀 Key Technical Specifications
+- **Architecture:** 15B parameter Unified Self-Attention Transformer.
+- **Speed:** ~38 seconds for 1080p output on an NVIDIA H100 GPU (via DMD-2 distillation in just 8 steps).
+- **Modalities:** Text-to-Video, Image-to-Video, all natively integrated with Audio.
 
-## Key Technical Features
+## 🎥 Video Examples
 
-Based on community observations and current documentation, the Happy Horse architecture is highly optimized for performance and multimodal generation:
+Here are some real clips demonstrating Happy Horse 1.0's capabilities.
+*(Note: Example videos are actively being uploaded to this repository. See the `examples/` directory for raw mp4 files.)*
 
-- **Unified Self-Attention Transformer:** Operating at approximately 15 billion parameters, the model handles text, image, video, and audio tokens in a single sequence.
-- **DMD-2 Distillation:** Utilizing Distribution Matching Distillation v2, the model generates high-resolution video efficiently (reportedly producing 1080p clips in around 38 seconds on an NVIDIA H100 with just 8 denoising steps).
-- **Native Lip-Sync & Multilingual Support:** Designed to natively support lip-syncing across several languages (including English, Mandarin Chinese, Japanese, Korean, German, and French).
-- **Timestep-Free Denoising:** Unlike traditional diffusion models, it bypasses explicit timestep embeddings, inferring denoising states directly from the latents.
+### Try the Official Generators
+We recommend exploring the official platforms using the Happy Horse 1.0 model:
+- 🌐 [HappyHor.se](https://happyhor.se)
+- 🌐 [Happy Horse Pro](https://happy-horse.pro/)
+- 🌐 [Happy Horse Art](https://happy-horse.art/)
 
-## Example Videos and Inspiration
-
-To truly understand what Happy Horse is capable of, we highly recommend checking out some of the generated video examples. These showcase the seamless multi-shot narratives, stunning motion quality, and natural audio generation.
-
-- 🎬 **[Happy Horse Video Examples & Scenes](https://happy-horse.cc/scenes)** – Browse cinematic AI video examples, templates, and creative inspiration.
-- 🌐 **[Happy Horse AI Video (Pro)](https://happy-horse.pro/)** – Explore more text-to-video and image-to-video demos and features.
-- 🐎 **[Happy Horses Official Demo](https://happyhorses.io/)** – The hub for the latest model updates and official demonstrations.
-
-## Use Cases
-
-With its robust capabilities, Happy Horse is ideally suited for:
-
-- **Short-form Social Content:** Ready-to-publish clips for TikTok, Reels, and Shorts with native sound.
-- **Marketing & Ad Creative:** Cinematic product teasers and ad spots.
-- **Global Campaigns:** Multilingual video deployment without the need to re-shoot or manually dub.
-- **Pre-visualization:** Generating storyboards, animatics, and establishing shots for film and TV.
-
-## Getting Involved
-
-Stay tuned to official channels for the release of inference code, model weights, and the distilled variants. As the platform evolves, this repository will be updated to reflect the latest open-source integrations, benchmarks (like the Artificial Analysis Video Arena), and community tools built around Happy Horse.
+## 📥 Installation (Coming Soon)
+We are actively preparing the model weights, inference code, and super-resolution module for public release on this repository. Star the repo to stay updated!
